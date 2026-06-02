@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Quiz Form</title>
+  <link rel="stylesheet" href="quiz.css" />
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>JavaScript Basics Quiz</h1>
+    <form id="quizForm">
+      <!-- Question 1 -->
+      <div class="question">
+        <p>1. Which method is used to attach an event to an element?</p>
+        <label><input type="radio" name="q1" value="a" /> addEvent()</label><br />
+        <label><input type="radio" name="q1" value="b" /> addEventListener()</label><br />
+        <label><input type="radio" name="q1" value="c" /> attachEventHandler()</label><br />
+        <small class="hint hidden">💡 Hint: It starts with “addEvent…”</small>
+        <button type="button" class="hint-btn">Show Hint</button>
+      </div>
+
+      <!-- Question 2 -->
+      <div class="question">
+        <p>2. What does the <code>preventDefault()</code> method do?</p>
+        <label><input type="radio" name="q2" value="a" /> Refreshes the page</label><br />
+        <label><input type="radio" name="q2" value="b" /> Stops the default form behavior</label><br />
+        <label><input type="radio" name="q2" value="c" /> Submits the form twice</label><br />
+        <small class="hint hidden">💡 Hint: It “prevents” something from happening.</small>
+        <button type="button" class="hint-btn">Show Hint</button>
+      </div>
+
+      <!-- Question 3 -->
+      <div class="question">
+        <p>3. Which arrow function syntax is correct?</p>
+        <label><input type="radio" name="q3" value="a" /> function => () {}</label><br />
+        <label><input type="radio" name="q3" value="b" /> () => {}</label><br />
+        <label><input type="radio" name="q3" value="c" /> () -> {}</label><br />
+        <small class="hint hidden">💡 Hint: It uses an equal sign and a greater-than symbol.</small>
+        <button type="button" class="hint-btn">Show Hint</button>
+      </div>
+
+      <button type="submit" class="submit-btn">Submit Quiz</button>
+    </form>
+
+    <div id="result" class="result-box"></div>
+  </div>
+
+  <script src="quiz.js"></script>
+</body>
+</html>

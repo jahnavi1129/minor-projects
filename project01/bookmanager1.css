@@ -1,0 +1,95 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background: #f7faff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    padding-top: 40px;
+  }
+  
+  .container {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    width: 400px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #1a1a1a;
+    margin-bottom: 1.5rem;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  
+  input {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1rem;
+  }
+  
+  button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  button:hover {
+    background: #0056b3;
+  }
+  
+  .bookmark-list {
+    list-style: none;
+    margin-top: 1.5rem;
+    padding: 0;
+  }
+  
+  .bookmark-item {
+    background: #f1f6ff;
+    margin-bottom: 0.8rem;
+    padding: 0.8rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s ease;
+  }
+  
+  .bookmark-item a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .bookmark-item a:hover {
+    text-decoration: underline;
+  }
+  
+  .delete-btn {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 0.5rem 0.8rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: 0.3s ease;
+  }
+  
+  .delete-btn:hover {
+    background: #e60000;
+  }
+  
